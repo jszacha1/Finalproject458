@@ -1,5 +1,5 @@
 # Buffer Overflow Attack Lab
-This lab took my about 5 hours from start to do the first 3 tasks. However, I am not the best person to judge the time off of because I am currently suffering from a concussion and am not thinking very clearly. I believe I could have done it in near half the time if I was operating normally. Simply setting the VM up took me almost 2 hours because I had trouble looking for icons on the application. An extra hour trying to find what I was doing wrong, even though things worked but I assumed they would look different was also used. 
+This lab took my about 5 hours from start to do the first 3 tasks. However, I am not the best person to judge the time off of because I am currently suffering from a concussion and am not thinking very clearly. I believe I could have done it in near half the time if I was operating normally. Simply setting the VM up took me almost 2 hours because I had trouble looking for icons on the application. I also wasted an hour trying to find out what I was doing wrong when in reality the everything was working fine, I just assumed it would look different.
 
 ## Task 1: Getting Familiar with Shellcode
 ### Section 3.4
