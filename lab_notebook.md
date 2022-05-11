@@ -23,5 +23,12 @@ For the shellcode portion of the exploit.py function, I simply copied the 32bit 
 I don't know if this is the correct method but, to figure out the buffer size, you need to figure out the address of buffer. To find the address of buffer one can simply look at the top of the stack or the address of ESP for the stack pointer. If the address points to 0x0 then buffer is at the top of the stack and that's the address. Otherwise, if it points to another address then to 0x0, the true address of buf is 2 * the number of addresses pointed to before 0x0 away from the top of the stack. The line for buffer should have an address that points to 4 other addresses when its not at the top of the stack. Subtracting the address you get from the address of ebp gives the buffer size + 8 for 2 frames. The payload used is still the same for L1, the 32bit shellcode.
 
 
+## Task 8: Defeating Address Randomization
+### Section 10
+![image](https://user-images.githubusercontent.com/46972037/167886947-7e165fb1-658f-46e5-88df-944dae97fcb4.png)
 
-
+## Task 9: Experimenting with Other Countermeasures
+### Section 11.1
+I don't really get to see what StackGuard is doing because it specifies to turn off address space randomizatation. Thus, if my exploit.py file has the right values then it will execute the shell on the first attempt. When trying to exit from the shell it keeps going back in though as it continously executes the attack. If exploit.py is wrong and the badfile has the wrong values then it will never be successful.
+### Section 11.2
+Without the -z execstack flags, call_shellcode.c compiles as normal but executing a32.out or a64.out results in a Segmentation fault.
